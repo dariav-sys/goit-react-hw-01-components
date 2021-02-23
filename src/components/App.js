@@ -12,11 +12,11 @@ const App = () => {
     //     {...data.user}
     // />);
 
-    // return (<Statistics title="Upload stats" stats={data.stats} />)
+    // return (<Statistics title="UPLOAD STATS" stats={data.stats} />)
 
-    // return (<FriendList friends={data.friends}/>)
+    return (<FriendList friends={data.friends}/>)
 
-    return <TransactionHistory items={data.transactions} />
+    // return <TransactionHistory items={data.transactions} />
 }
 
 export default App;

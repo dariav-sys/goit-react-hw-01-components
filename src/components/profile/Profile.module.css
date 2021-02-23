@@ -1,0 +1,32 @@
+.profile {
+  text-align: center;
+  border: 2px solid black;
+  width: 300px;
+  margin: 50px auto;
+}
+
+.avatar {
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.name {
+  font-weight: 700;
+}
+.stats {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.label {
+  display: flex;
+  margin: 15px;
+  font-size: 10px;
+}
+
+.quantity {
+  font-size: 15px;
+}

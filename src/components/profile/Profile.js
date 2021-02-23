@@ -1,31 +1,31 @@
 import React from "react";
 import PropTypes from "prop-types";
-import defaultImage from "../images/default.png";
-
+import defaultImage from "./default.png";
+import styles from "./Profile.module.css";
 
 const Profile = ({ name, tag, location, avatar, stats }) => {
   const { followers, views, likes } = stats;
   return (
-  <div className="profile">
-    <div className="description">
-      <img src={avatar} alt={tag} className="avatar" />
-      <p className="name">{name}</p>
+  <div className={styles.profile}>
+    <div className="description" >
+        <img src={avatar} alt={tag} className={styles.avatar} width={100} />
+        <p className={styles.name}>{name}</p>
       <p className="tag">{tag}</p>
       <p className="location">{location}</p>
       </div>
       
-      <ul className="stats">
+      <ul className={styles.stats}>
     <li>
-      <span className="label">Followers</span>
-      <span className="quantity">{followers}</span>
+      <span className={styles.label} >Followers</span>
+      <span className={styles.quantity} >{followers}</span>
     </li>
     <li>
-      <span className="label">Views</span>
-      <span className="quantity">{views}</span>
+      <span className={styles.label} >Views</span>
+      <span className={styles.quantity} >{views}</span>
     </li>
     <li>
-      <span className="label">Likes</span>
-      <span className="quantity">{likes}</span>
+      <span className={styles.label} >Likes</span>
+      <span className={styles.quantity} >{likes}</span>
     </li>
   </ul>
   </div>
