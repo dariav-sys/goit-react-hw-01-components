@@ -9,19 +9,22 @@
 }
 
 span {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  margin-top: 39px;
 }
 
 .is_online {
   background-color: green;
+  margin-top: 39px;
 }
 
 .is_offline {
   background-color: yellow;
+  margin-top: 39px;
 }
 
 .name {

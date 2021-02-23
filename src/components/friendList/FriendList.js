@@ -13,6 +13,6 @@ const FriendList = ({ friends }) => {
   );
 };
 
-FriendList.propTypes = PropTypes.arrayOf(PropTypes.object);
+FriendList.propTypes = PropTypes.arrayOf(PropTypes.object).isRequired;
 
 export default FriendList;
